@@ -1,2 +1,1 @@
-# testing
-finding out how to use git&amp;github
+<p>портфолио с проектами по верстке</p>
