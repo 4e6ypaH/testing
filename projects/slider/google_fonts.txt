@@ -1,0 +1,12 @@
+html
+
+<link href="https://fonts.googleapis.com/css?family=Rubik:500,700" rel="stylesheet">
+
+css
+font-family: 'Rubik', sans-serif;
+
+План работы:
+1) мэйлеры
+2) git
+3) google fonts
+4) всплывающий список

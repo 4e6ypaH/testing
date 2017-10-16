@@ -1,0 +1,40 @@
+body {              
+    background:#eee;
+    margin:0 auto;
+    padding:0;
+    background-color: #F6F6F6;
+}
+header {            
+    height:180px;
+    text-align:center;
+    background-color:orange; 
+    margin-bottom:60px;
+    font-size: 40px;
+}
+.owl-carousel {
+    position: relative;
+    margin-right: 0px;
+    width:100%;
+}
+.text {
+position:absolute;
+bottom:30px;
+left:55px;
+color:white;
+display:block;
+width:100%;
+}
+.first_block {
+    font-size:3vw;
+    text-transform: uppercase;   
+}
+.second_block {
+    font-size:1.5vw;
+}
+/*Добавляем адаптивность*/
+@media screen and (min-width:980px) {
+    .owl-carousel {
+       width:95%;
+       margin:0 auto;       
+    }
+}
