@@ -1,0 +1,132 @@
+/*body *{
+	border:solid green 3px;
+}*/
+.wrapper {
+	width:1800px;
+	height:1450px;
+	background-color: #EEEEEE;
+}
+.menu {
+	float:left;
+	line-height: 1.6em;
+	padding:0 25px;
+	position:fixed;
+}
+.button_create {
+	background-color: #2196F3;
+	color:white;
+	width:145px;
+	height:30px;
+	font-size:17px;
+	margin-left:-10px;
+}
+.menu_list li {
+	padding-left:20px;
+}
+.main {
+	width:1200px;
+	margin-left:180px;
+	margin-top:20px;
+	float:left;
+	overflow:hidden;
+	background-color: white;
+}
+.checkmarks_stats	{
+	padding:20px;
+	position:relative;
+}
+.checkmarks {
+}
+.stats {
+	position:absolute;
+	top:10px;
+	right:75px;
+	}
+.save_button {
+	position:absolute;
+	top:20px;
+	right:15px;
+}
+.inputs li {
+	display:inline-block;
+	text-align:left;
+	margin-left:10px;
+}
+.input {
+	color:grey;
+}
+select {
+width:100px;	
+}
+table {
+position:relative;
+}
+.company_name {
+	padding:0 10px;
+}
+th {
+	padding:0 10px;
+}
+td {
+	text-align:center;
+	padding:5px 35px;
+	
+}
+ul {
+	padding:0;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color:black;
+}
+.extra_filters {
+	display:block;
+}
+.footer {
+	margin:0;
+	padding:0px;
+}
+.footer_left_part li, .footer_right_part li {
+	display:inline-block;
+	padding:0 10px;
+}
+.footer_left_part {
+	padding-left:20px;
+	float:left;
+}
+.sorting {
+	width:120px;
+}
+.footer_right_part {
+	padding:17px 20px;
+	float:right;
+}
+.footer_right_part select {
+	width:50px;
+}
+.CSV_link {
+	color:blue;
+}
+.bot, .service, .advertiser, .geo, .status, 
+.launching, .manager, .stopping, .date {
+	display:none;
+}
+.extra_filters {
+	display:none;
+	padding-left:10px;
+}
+.extra_filters li {
+	display:inline-block;
+	text-align:left;
+}
+.extra_filters select {	
+	margin-right:10px;
+}
+.datepicker {
+	width:150px;
+	margin-right:15px;
+}
+button {
+	margin:0 15px;
+}

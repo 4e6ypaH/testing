@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 		
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<!-- подключаем jQuery -->
+  <script src="jquery-3.1.1.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="datepicker.js"></script>
+  </head>
+
+  <body>
+<div class="wrapper">
+	<div class="menu">
+		<div class="user">
+		<p>somemail.com <br>
+		some_role </p>
+		</div>
+		<button class="button_create"><strong>создать</strong></button>
+		<div class="menu_list"></div>
+			<ul>
+				<li> <img src="images/1.png" width="15px"><a href="#">Рекламодатели</a></li>
+				<li><img src="images/2.png" width="15px"><a href="#">Сервисы</a></li>
+				<li><img src="images/3.png" width="15px"><a href="#">Кампании</a></li>
+				<li><img src="images/4.png" width="15px"><a href="#">Промо-материалы</a></li>
+				<li><img src="images/5.png" width="15px"><a href="#">Веб-мастеры</a></li>
+				<li><img src="images/6.png" width="15px"><a href="#">Статистика</a></li>
+				<li><img src="images/7.png" width="15px"><a href="#">Аналитика</a></li>
+				<li><img src="images/8.png" width="15px"><a href="#">Управление</a></li>
+				<li><img src="images/9.png" width="15px"><a href="#">Новости</a></li>
+				<li><img src="images/10.png" width="15px"><a href="#">Персонал</a></li>
+				<li><img src="images/11.png" width="15px"><a href="#">Выход</a></li>
+			</ul>
+		</div>
+	
+<div class="main">
+<form 	name="form1">
+	<div class="checkmarks_stats">
+	<div class="checkmarks">
+		<strong>Список</strong>		
+			<label><input type="checkbox"  class="checkbox_bot">bot</label>
+			<label><input type="checkbox" class="checkbox_service">Сервис</label>
+			<label><input type="checkbox" class="checkbox_advertiser">Рекламодатель</label>
+			<label><input type="checkbox" class="checkbox_geo">Geo</label>
+			<label><input type="checkbox" class="checkbox_status">Статус</label>
+			<label><input type="checkbox" class="checkbox_manager">Менеджер</label>
+			<label><input type="checkbox" class="checkbox_launching">Запуск</label>
+			<label><input type="checkbox" class="checkbox_stopping">Остановка</label>
+			<label><input type="checkbox" class="checkbox_date">Дата</label>
+	</div>
+	<div class="stats">
+			<label>Период статистики</label> <br>
+			<input type="text"  class="datepicker" size="10" maxlength="10">
+						
+	</div>						<!-- close stats-->
+	<button class="save_button"><img src="images/save.png" width="17px"></button>
+	</div> 						<!-- close chekmarks_stats-->
+	<hr>
+	<div class="inputs"> 		<!-- задаем поля для ввода списком-->
+		<ul>
+			<li class="input"><label for="company"> Компания </label> <br>
+			<input type="text"  id="company" placeholder="ID,Имя" size="10" maxlength="10"/></li>
+			<li class="input"><label for="service"> Сервис </label>  <br>
+		<input type="text" id="service" placeholder="ID,Имя" size="15" maxlength="10"/></li>
+		<li class="input"><label for="advertiser"> Рекламодатель </label> <br>
+		<input type="text" id="advertiser" placeholder="ID,Имя" size="15" maxlength="10"/></li>
+		<li class="input"><label> Статус </label> <br>
+			<select size="1">
+				<option>bad</option>
+				<option>so so</option>
+				<option>good</option>
+				<option>supergood</option>
+				<option selected>awesome</option>
+			</select>
+		</li>
+		
+		<li class="input"><label> Дата создания </label> <br>
+		<input type="text"  class="datepicker" size="10" maxlength="10">	
+		</li>
+
+	<button class="reset_button" type="reset"><img src="images/reset.png" width="17px"></button><!--сброс фильтров-->
+	<button class="extra_filters_button"><img src="images/extra.png" width="17px"></button>  <!-- показываем/скрываем доп. фильтры-->
+	</ul>	
+	</div>
+
+	<div class="extra_filters"> <!-- добавляем доп. фильтры-->
+	<ul>
+	<li class="input"><label>Промо</label> <br>
+			<select size="1">
+				<option>bad</option>
+				<option>so so</option>
+				<option>good</option>
+				<option>supergood</option>
+				<option selected>awesome</option>
+			</select>
+		</li>
+		<li class="input"><label> Размер промо </label> <br>
+			<select size="1">
+				<option>bad</option>
+				<option>so so</option>
+				<option>good</option>
+				<option>supergood</option>
+				<option selected>awesome</option>
+			</select>
+		</li>
+	</ul>
+	</div>
+
+	<div class="table"> <!--создаем таблицу-->
+		<table><tr>
+			<th class="company_name">Компания</label></th>
+			<th class="bot reset">Bot</th>
+			<th class="service reset">Сервис</th>
+			<th class="advertiser reset">Рекламодатель</th>
+			<th class="geo reset">Geo</th>
+			<th class="status reset">Статус</th>
+			<th class="manager reset">Менеджер</th>
+			<th class="launching reset">Запуск</th>
+			<th class="stopping reset">Остановка</th>
+			<th class="date reset">Дата</th>
+		</tr>
+		<tr>
+			<td class="company_name">idef0</td>
+			<td class="bot reset"></td>
+			<td class="service reset">за</td>
+			<td class="advertiser reset">предприятие</td>
+			<td class="geo reset">за</td>
+			<td class="status reset">за</td>
+			<td class="manager reset">за</td>
+			<td class="launching reset">за</td>
+			<td class="stopping reset">за</td>
+			<td class="date reset">за</td>
+		</tr>
+		<tr>
+			<td class="company_name">llomn198</td>
+			<td class="bot reset"></td>
+			<td class="service reset">за</td>
+			<td class="advertiser reset">за</td>
+			<td class="geo reset">за</td>
+			<td class="status reset">за</td>
+			<td class="manager reset">за</td>
+			<td class="launching reset">за</td>
+			<td class="stopping reset">клиент</td>
+			<td class="date reset">за</td>
+		</tr>
+		<tr>
+			<td class="company_name">rfb324</td>
+			<td class="bot reset"></td>
+			<td class="service reset">за</td>
+			<td class="advertiser reset">за</td>
+			<td class="geo reset">за</td>
+			<td class="status reset">за</td>
+			<td class="manager reset">за</td>
+			<td class="launching reset">за</td>
+			<td class="stopping reset">за</td>
+			<td class="date reset">за</td>
+		</tr>
+		<tr>
+			<td class="company_name">hto543</td>
+			<td class="bot reset">за</td>
+			<td class="service reset">за</td>
+			<td class="advertiser reset">за</td>
+			<td class="geo reset">за</td>
+			<td class="status reset">за</td>
+			<td class="manager reset">клиент</td>
+			<td class="launching reset">за</td>
+			<td class="stopping reset">за</td>
+			<td class="date reset">за</td>
+		</tr>
+		<tr>
+			<td class="company_name">rdf203</td>
+			<td class="bot reset"></td>
+			<td class="service reset">за</td>
+			<td class="advertiser reset">за</td>
+			<td class="geo reset">за</td>
+			<td class="status reset">за</td>
+			<td class="manager reset">за</td>
+			<td class="launching reset">за</td>
+			<td class="stopping reset">за</td>
+			<td class="date reset">за</td>
+		</tr>
+		<tr>
+			<td class="sum"><strong>Итог:</strong></td>
+		</tr>
+			</table>
+	</div> <!--close table-->
+	<hr>
+	
+	<div class="footer">
+		<div class="footer_left_part">
+		<ul>
+			<li><p>Выгрузить таблицу в <a class="CSV_link"href="#">CSV</a></p></li>
+			<li><button><img src="images/print.png" width="17px"></button></li>
+			<li><p>Сортировка</p></li>
+			<li >
+			<select class="sorting" size="1">
+				<option>id</option>
+				<option>без сортировки</option>
+				</select>
+		</ul>		  
+		</div> <!--close footer_left_part-->
+
+		<div class="footer_right_part">
+			<ul>
+				<li>Строк на странице:</li>
+				<li>
+				<select size="1">
+					<option selected>10</option>
+					<option>20</option>
+					<option>50</option>
+					<option>100</option>					
+				</select>
+				</li>
+				<li>1-10 из 7702</li>
+				<li><a href="#"><img src="images/arrow_left.png" width="15px"></a></li>
+				<li>1</li>
+				<li><a href="#"><img src="images/arrow_right.png" width="15px"></a></li>
+			</ul>
+		</div> <!--close footer_right_part-->
+	</div> <!--close footer-->
+</div> <!--close main-->
+</div> <!--close wrapper-->
+</body>
+</html>
