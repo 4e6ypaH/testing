@@ -1,0 +1,203 @@
+body {
+
+}
+body * {
+	padding:0;
+	margin:0;
+	/*border:2px solid green;*/
+}
+a {
+	text-decoration:none;
+	color:white;
+}
+.wrapper1 {
+	max-width:1440px;
+	background-color:#28243C;
+}
+.main_page_title {
+font-family: arial;
+letter-spacing: 6px;
+color:#3FCC6A;
+font-size: 24px;
+padding-top:120px;
+text-align:center;
+}
+.main_page_subtitle {
+word-spacing: 35px;	
+color:#423F51;
+font-size: 10px;
+margin-top:30px;
+text-align:center;
+letter-spacing: 6px;
+opacity:1;
+}
+.wrapper2 {
+	margin-top:96px;
+	padding:50px;
+}
+
+.header {
+	height: 605px;
+}
+.header h1 {
+	color:white;
+	margin:0 auto;
+	margin-top:205px;
+	max-width:400px;
+}
+.nav_list {
+float:right;
+margin-right: 212px;
+}
+.title {
+	color:white;
+	font-size:10px;
+	float:left;
+	margin-left:212px;
+	margin-top:46px;
+}
+.nav_list li {
+display:inline-block;
+margin-right:35px;
+margin-top:46px;
+font-size:9px;
+}
+.clear {
+clear:both;
+}
+.header_plus_nav {
+	text-align:center;
+	background-image:url("images/header2.jpg");
+}
+.header {
+	padding-top:50px;
+	
+}
+.get_service_button {
+	margin-top:23px;
+	padding:8px;
+	color:white;
+	background-color:#F25A29;
+	border-radius:50px;
+}
+.advantages_container {
+	padding-top:50px;
+	background-color:white;	
+}
+.advantages_container_block {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	padding-bottom: 98px;
+}
+.advantage h3 {
+	padding:21px 0;
+}
+.advantages_container h2 {
+	text-align:center;
+}
+.advantage {
+	flex-basis:200px;
+}
+.advantage img {
+margin-top: 72px;
+}
+.container_service_for_u {
+	min-height:500px;
+	background:url("images/web-site.jpg") no-repeat right;
+	background-color:grey;
+		
+}
+.container_service_for_u span {
+	color:orange;
+}
+.container_service_for_u_text_part {
+	max-width:400px;
+	margin-left: 212px;
+}
+.container_service_for_u_text_part h2 {
+padding-top:140px;
+margin-bottom: 42px;
+}
+/*.container_service_for_u_img_part {
+	float:right;
+	margin-top:50px;
+}*/
+.read_more_link {
+	color:black;
+	text-decoration:none;
+}
+.container_clients_say {
+	padding-top:93px;
+	padding-bottom: 90px;
+	background-color:white;
+}
+.fotorama {
+	margin-top:70px;
+}
+.container_clients_say h2 {
+	text-align:center;
+}
+.container_build_ur_career {
+	background-color:white;
+	overflow:hidden;
+}
+.container_build_ur_career_image img {
+	float:left;
+}	
+.container_build_ur_career_text {
+float:left;
+margin-top:100px;
+margin-left:20px;
+max-width:400px;
+margin-bottom:100px; 
+}
+.container_build_ur_career_text h2 {
+	
+}
+.container_build_ur_career_text span {
+	color:orange;
+}
+.upload_ur_CV {
+	color:black;
+}
+.submit_button {
+	margin-top:50px;
+	padding:10px;
+	background-color:orange;
+	border-radius:20px;
+}
+.footer {
+	min-height:100px;
+	background-color:#4A4A4A;
+}
+.footer_copyright {
+	color:white;
+	padding-left:212px;
+	padding-top:48px;
+	padding-bottom:42px;
+}
+.social {
+	float:right;
+	margin-right: 212px;
+}
+.social li{
+	padding-left:15px;
+	text-decoration: none;
+	display: inline-block;
+}
+.image_ps {
+	margin:0 auto;
+	text-align:center;
+}
+.thanks {
+	color:white;
+	text-align:center;
+	margin-top:20px;
+}
+.link {
+	color:white;
+	text-align:center;
+	padding-bottom:50px;
+	padding-top:20px;
+}
