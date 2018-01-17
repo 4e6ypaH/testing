@@ -13,6 +13,7 @@ a {
 .wrapper1 {
 	max-width:1440px;
 	background-color:#28243C;
+	margin:auto;
 }
 .main_page_title {
 font-family: arial;
