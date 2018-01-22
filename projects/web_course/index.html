@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset="utf-8">
+<title>ôîðìû</title>
+<link href="formstyle.css" rel="stylesheet"></link>
+</head>
+
+<body>
+<div id="wrapper">
+<form name="form1">
+<fieldset>
+<legend>Ââîä ëè÷íûõ äàííûõ</legend>
+<p class="question"><label for="name"> ââåäèòå âàøå èìÿ(äî 10 ñèìâîëîâ): </label></p>
+<p> <input type="text" name="name" id="name" size="30" maxlength="10" required/></p>
+<p class="question"><label for="password"> ââåäèòå ïàðîëü(äî 10 ñèìâîëîâ): </label></p>
+<p> <input type="password" name="password" id="password" size="30" maxlength="10" required/>
+</fieldset>
+<fieldset>
+<legend>Âîïðîñû</legend>
+<p class="question">Are you adult? <label>yes<input type="radio" name="radio" value="yes" checked /></label>
+<label>no<input type="radio" name="radio" value="no"/></label>
+</p>
+<p><label><input type="checkbox" name="ez" disabled />done</label> </p>
+<p class="question">How many times a week do you play video games?</p>
+<select name="sex" multiple>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option selected>every day</option>
+</select>
+</fieldset> <br>
+<p class="question tp"><label for="article">Âàø êîìåíòàðèé</label>
+<p> <textarea name="article" cols="50" rows="10" id="article" placeholder="Òåñòîâûé òåêñò" title="ââîäè êàê íàäî åáà" autofocus required></textarea></p>
+
+<p> <input type="image" src="images/button1.jpg" width="100px"/> </p>
+<p> <input type="reset" name="reset" value="ñáðîñ" /> </p>
+</form>
+</div>
+<progress value="0.80">80%</progress><br>
+<progress value="80" max="200"></progress><br>
+<small>ýòî ÷òî çà ïîêåìîí?</small>
+</body>
+</html>
