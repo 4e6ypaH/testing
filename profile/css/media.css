@@ -1,0 +1,149 @@
+@media only screen and (max-width : 1200px) {
+
+    .profile_wrapper_2 {
+        padding-top: 5px;
+    }
+    .profile_photos {
+        margin-left: 10px;
+    }
+    .profile_photos .large_photo {
+        width: 120px;
+        height: 120px;
+    }
+    .profile_photos .mini_photo {
+        top: 16px;
+        left: -16px;
+    }
+    .profile_name_description_wrap {
+        margin-right: 0;
+    }   
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+    .header_top {
+        text-align: center;
+    }
+    .profile_menu li a {
+        padding: 0 0 5px 10px;
+    }
+    .profile_photos .large_photo {
+        top: 6px;
+    }
+    .profile_name_description_wrap {
+        float: none;
+    }
+    .profile_wrapper_2 {
+        padding-top: 0;
+    }
+    .profile_action {
+        margin-top: 5px;
+    }
+    .profile_name_description_wrap {
+        margin-left: 230px;
+    }
+    .profile_photos .large_photo {
+        top:-10px;
+    }
+    .profile_photos .mini_photo {
+        top: 65px;
+    }
+    .profile_info_right {
+        margin-top: 90px;
+    }
+    .profile_info_right {
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+    .profile_info_right li {
+        float: none;
+        display: inline-block;
+    }
+    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    
+    .communication {
+        float: none;
+        display: block;
+    }
+    .logo__subscribers {
+        display: block;
+    }
+    .header__logo-link {
+        margin-right: 0;
+    }
+    .header_top {
+        text-align: center;
+    }
+    .profile_name_description_wrap {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 90px;
+    }
+    .profile_wrapper {
+        margin-top: 0;
+        text-align: center;
+    }
+    .profile_photos {
+        margin-left: 0;
+    }
+    .profile_photos .large_photo {
+        position: static;
+    }
+    .profile_photos .mini_photo {
+        left: 5px;
+        top: 60px;
+    }
+    .profile_name_description_wrap {
+        margin-top: 0;
+    }
+    .profile_info_right {
+        padding-bottom: 10px;
+    }
+    .profile_action li {
+        float: none;
+        display: inline-block;
+    }
+    .profile_action {
+        float: none;
+        text-align: center;
+    }
+    .profile_menu {
+        float: none;
+        text-align: center;
+    }
+    .profile_menu li {
+        float: none;
+        display: inline-block;
+    }
+    .img_item {
+        margin-bottom: 10px;
+    }   
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+    .profile_menu li a {
+        padding: 0 3px 5px 3px;
+    }
+    .profile_menu {
+        margin-right: 0;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    .profile_menu li a {
+        font-size: 11px;
+    }
+    .profile_menu li a {
+        padding: 0 3px 5px 3px;
+    }
+    
+}

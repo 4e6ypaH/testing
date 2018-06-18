@@ -1,0 +1,311 @@
+* {
+	box-sizing: border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+.row {
+	margin:auto;
+}
+
+div {
+	display:block;
+}
+
+.col-xs-12 {
+    width: 100%;
+}
+
+.top-logo-wrapper, .communication, .top_header_menu, .top_header_menu li {
+    display: inline-block;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color:#fff;
+}
+
+a:hover {
+	color:#fff;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	border:0;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+h2 {
+	display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.header_profile_page {
+	border: 2px solid #ECEFF1;
+}
+
+.photos_profile_page_bg {
+	padding-top: 18px;
+	background-image: url(../img/darth_vader.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: inset 0px 40px 30px -10px rgba(50, 50, 50, 0.75), inset 0px -40px 30px -10px rgba(50, 50, 50, 0.75);
+  	box-shadow: inset 0px 40px 30px -10px rgba(50, 50, 50, 0.75), inset 0px -40px 30px -10px rgba(50, 50, 50, 0.75);
+}
+
+.header__logo-link {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.communication_avatar {
+	border-radius: 50%;
+	border: 2px solid #4EF026;
+}
+
+.profile_wrapper {
+	margin-top: 100px;
+	color:#fff;
+}
+
+.profile_description {
+	margin-top:70px;
+	margin-left:30px;
+}
+
+.logo__subscribers {
+	margin-left: 30px;
+	line-height: 29px;
+}
+
+.communication {
+	float:right;
+}
+
+.top_header_menu {
+	list-style-type: none;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+}
+
+.top_header_menu li {
+	margin-right: 25px;
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.profile_photos {
+  position: relative;
+  margin-left: 25px;
+  width: 170px;
+  display: inline-block;
+}
+
+.profile_photos .large_photo {
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+	border: 3px solid #4EF026;
+	position: absolute;
+	top: -56px;
+}
+
+.mini_photo {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 3px solid #4EF026;
+    left: 0;
+    top: 56px;
+    position: absolute;
+}
+
+.profile_name_description_wrap {
+	float: right;
+    font-size: 0;
+    margin-right: 143px;
+}
+
+.profile_name {
+	margin-bottom: 2px;
+    font-size: 30px;
+    font-family: "Open Sans";
+}
+
+.profile_description {
+	margin-top: 0;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.profile_info_right {
+    list-style-type: none;
+    display: block;
+    font-size: 0;
+    height: 100%;
+    float: right;
+    margin-top: 62px;
+}
+
+.profile_info_right li {
+    font-size: 14px;
+    margin-right: 15px;
+    float: left;
+}
+
+.profile_wrapper_2 {
+    padding-top: 8px;
+}
+
+.profile_menu {
+	list-style-type: none;
+    float: right;
+    padding: 0;
+    font-size: 0;
+}
+
+.profile_menu li {
+	float: left;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+}
+
+.profile_menu li:hover {
+	border-bottom: 2px solid #7423FF;
+}
+
+.profile_menu li a {
+	padding: 0 20px 5px 20px;
+    color: #757575;
+    width: 100%;
+    display: block;
+    font-size: 13px;
+    font-weight: lighter;
+    display: block;
+}
+
+.profile_menu li span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.profile_action {
+	margin: 3px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+.profile_action li {
+	float: left;
+    margin-right: 10px;
+    line-height: 30px;
+}
+
+.profile_action li:first-child a {
+    color: #09BDFA;
+    display: inline-block;
+    padding: 0 15px;
+    border: 1px solid #09BDFA;
+}
+
+.profile_action .fa-envelope {
+    background-color: #09BDFA;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.profile_action .dots {
+	font-size: 6px;
+}
+.circle1 {
+	color: #09BDFA;
+}
+.circle2 {
+	color: #94E41A;
+}
+.circle3 {
+	color: #FB4181;
+}
+
+.images_s {
+	background-color: #F5FBFB;   
+    padding-top: 20px;
+	margin:auto;
+}
+
+.img_item {
+	background-color: #EDEDED;
+    margin: auto;
+    margin-top:20px;
+    position: relative;
+    cursor: pointer;    
+    display: inline-block;    
+}
+
+.img_item img {
+	width:100%;
+}
+
+.panel {	
+	position: absolute;
+    opacity: 0;
+    z-index: 999;
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.panel div {
+	display: inline-block;
+}
+.panel:hover {
+	transition: 2s;
+	opacity: 1;
+}
+.panel_date {
+	float: left;
+}
+.panel_repost, .panel_like {
+	float: right;
+}
+.panel_like {
+	padding-right:10px;
+}
