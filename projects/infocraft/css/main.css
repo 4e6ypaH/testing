@@ -2,6 +2,9 @@ body {
 
 }
 
+html {
+	height: 100%;
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -45,7 +48,7 @@ body {
 
 .nav {
 	display: flex;
-	background-color: #7A7A7A;
+	background-image: linear-gradient(45deg, #8D8C8C, #525252);
 	margin:40px 0;	
 	
 
@@ -92,15 +95,15 @@ margin:20px;
 }
 
 .SNT {
-	background-color: #58A2D0;
+	background-image: linear-gradient(45deg, #8DB3D4, #3396CD);
 }
 
 .TSG{	
-	background-color: #98B035;
+	background-image: linear-gradient(45deg, #C1BF1F, #7DA644);
 }
 
 .TSN{	
-	background-color: #E36425;
+	background-image: linear-gradient(45deg, #F99042, #D34310);
 }
 
 .slider {
