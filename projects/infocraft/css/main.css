@@ -1,0 +1,41 @@
+body {
+
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	display:flex;
+	justify-content: space-around;
+	color: #9A9A9A;
+	font-size: 1em;
+}
+
+.infocraft_logo {
+	display:flex;
+	flex-direction: row;
+}
+
+.infocraft_logo img {
+	margin-top: 15px;
+	margin-right: 8px;
+}
+
+.infocraft_logo_title {
+	display: flex;
+	flex-direction: column;	
+}
+
+.infocraft_main_logo_title{
+	font-size:1.2em;
+}
+
+.phone_number, .call_me_back {
+	color: #F78C42;
+}
+
+
+.footer
