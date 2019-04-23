@@ -47,7 +47,7 @@ body {
 	display: flex;
 	background-color: #7A7A7A;
 	margin:40px 0;	
-	color: #FFF;
+	
 
 }
 .nav_items_list {	
@@ -58,6 +58,11 @@ body {
 .nav_item {	
 	margin: 5% 10%;
 } 
+
+.nav_item a {
+	color: #FFF;
+	text-decoration: none;
+}
 
 .programs_wrapper {
 	display:flex;
