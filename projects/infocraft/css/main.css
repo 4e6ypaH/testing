@@ -7,7 +7,7 @@ body {
 	flex-direction: column;
 	margin:55px 5% 95px 5%;
 	width:90%;
-	max-width:1500px;
+
 }
 
 /* header */
@@ -97,4 +97,35 @@ margin:20px;
 .TSN{	
 	background-color: #E36425;
 }
-.footer
+
+.slider {
+	width: 90%;
+	height: 500px;
+	background-color: #25EDCF;
+}
+
+.footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10%;
+}
+
+.footer_navigation_list {
+	list-style: none;	
+	}
+.footer_navigation_list a {
+	color: #666666;
+}
+
+.special_propose span {
+	font-size: 21px;
+}
+.special_propose p {
+	color: #666666;
+}
+.special_propose button {
+	color: #FFF;
+	background-color:#70D0FD;
+	border: 0;
+	padding: 3.5px;
+}
