@@ -150,6 +150,11 @@ body {
 	background-image: linear-gradient(45deg, #F99042, #D34310);
 }
 
+.greetings_container, .suggestions_container {
+	display: flex;
+	flex-direction: column;
+}
+
 /* slider begin*/
 .slideshow-container {
 	margin-top: 60px;
@@ -297,4 +302,29 @@ body {
 	box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.5);
 }
 
-/* @media */ 
+ @media (max-width: 1000px){
+	.programs_wrapper {
+		justify-content: center;		
+	}
+	.programs_container {
+		margin:10px;
+	}
+}
+
+@media (max-width: 730px) {
+	.header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.infocraft_logo{		
+	}
+
+	.contacts, .callback {
+	margin-left: 50px;
+	}
+
+	.programs_container {
+		/* justify-content: center; */
+		margin-bottom: 10px;
+	}
+}
