@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,11 +10,10 @@
 				<!--wrapper begin -->
 <div class="wrapper">
 
-
 	<header class="header">	
 
 		<div class="infocraft_logo">
-			<img src="img/infocraft_logo.jpg" alt="infocraft logo image" width="75" height="50">
+			<img src="img/infocraft_logo.jpg" alt="infocraft logo image" width="60" height="40">
 			<div class="infocraft_logo_title">
 				<p><span class="infocraft_main_logo_title"><strong>Инфокрафт®</strong></span><br>Корпроративный портал</p>
 			</div>	
@@ -74,41 +73,76 @@
 
 	</div>
 
-
 	<div class="greeting_container">
-	<h2>Инфокрафт приветствует вас!</h2>
-	<p>
-	Компания «Инфокрафт» специализируется на разработке программного обеспечения для предприятий ЖКХ.<br>Мы создаем прикладные решения на платформе «1С:Предприятие 8», программы для Microsoft Windows<br>и онлайн-сервисы, направленные на решения профессиональных задач наших клиентов.
-	</p>	
+		<h2>Инфокрафт приветствует вас!</h2>
+		<p>	Компания «Инфокрафт» специализируется на разработке программного обеспечения для предприятий ЖКХ.<br>Мы создаем прикладные решения на платформе «1С:Предприятие 8», программы для Microsoft Windows<br>и онлайн-сервисы, направленные на решения профессиональных задач наших клиентов.	</p>	
 	</div>
 
-	<div class="slider">
-		
+	<!-- slider -->
+	<div class="slideshow-container">
+
+		<div class="mySlides">
+			<div class="numbertext">1 / 3</div>
+			<img src="img/nissan.jpg" alt="nissan image" style="width: 100%">
+			<div class="text"><strong>Nissan</strong></div>
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">2 / 3</div>
+			<img src="img/chrysler.jpg" alt="chrysler.jpg image" style="width: 100%">
+			<div class="text"><strong>Chrysler</strong></div>
+		</div>
+
+		<div class="mySlides">
+			<div class="numbertext">3 / 3</div>
+			<img src="img/tesla.jpg" alt="tesla image" style="width: 100%">
+			<div class="text"><strong>Tesla</strong></div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<div>
+			<span class="dot first" onclick="currentSlide(1)"></span>
+			<span class="dot second" onclick="currentSlide(2)"></span>
+			<span class="dot third" onclick="currentSlide(3)"></span>
+		</div>
+
 	</div>
+
 
 	<div class="suggestions_container">
-	<h2>Есть предложения?</h2>
-	<p>Компания «Инфокрафт» специализируется на разработке программного обеспечения для предприятий ЖКХ.<br>Мы создаем прикладные решения на платформе «1С:Предприятие 8», программы для Microsoft Windows<br>и онлайн-сервисы, направленные на решения профессиональных задач наших клиентов.</p>
+		<h2>Есть предложения?</h2>
+		<p>Компания «Инфокрафт» специализируется на разработке программного обеспечения для предприятий ЖКХ.<br>Мы создаем прикладные решения на платформе «1С:Предприятие 8», программы для Microsoft Windows<br>и онлайн-сервисы, направленные на решения профессиональных задач наших клиентов.</p>
 	</div>
 
-
 </div>
-		<!--wrapper end -->		
+		<!--wrapper end -->	
+
+<hr class="wrapper_line">
+
 <footer class="footer">
-	<nav class="footer_navigation">
-		<ul class="footer_navigation_list">
-			<li class="footer_navigation_item"><a href="#">Карта сайта</a></li>
-			<li class="footer_navigation_item"><a href="#">Новости</a></li>
-			<li class="footer_navigation_item"><a href="#">Объявления</a></li>
-			<li class="footer_navigation_item"><a href="#">Документы</a></li>
-		</ul>
-	</nav>
-	<div class="special_propose">
-		<span>Получите спецпредложение!</span>
-		<p>Просто заполните форму и нажмите "Отправить".</p>
-		<input type="text" placeholder="E-mail">
-		<input type="text" placeholder="Имя">
-		<button>Отправить</button>
+	<div class="footer_wrapper">
+
+		<nav class="footer_navigation">
+			<ul class="footer_navigation_list">
+				<li class="footer_navigation_item"><a href="#">Карта сайта</a></li>
+				<li class="footer_navigation_item"><a href="#">Новости</a></li>
+				<li class="footer_navigation_item"><a href="#">Объявления</a></li>
+				<li class="footer_navigation_item"><a href="#">Документы</a></li>
+			</ul>
+		</nav>
+
+		<div class="special_offer">
+			<span>Получите спецпредложение!</span>
+			<p>Просто заполните форму и нажмите "Отправить".</p>
+			<form>
+				<input type="text" class="e-mail_input" placeholder="E-mail">
+				<input type="text" class="name_input" placeholder="Имя">	
+				<button>Отправить</button>
+			</form>
+		</div>
+
 	</div>
 </footer>
 

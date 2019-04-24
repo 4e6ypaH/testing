@@ -1,24 +1,26 @@
-body {
-
-}
-
-html {
+html, body {
 	height: 100%;
 }
-.wrapper {
+
+body {
+	font-family: Arial, sans-serif;
+	max-width: 1080px;
+	margin:auto;
 	display: flex;
 	flex-direction: column;
+}
+
+.wrapper {
 	margin:55px 5% 95px 5%;
 	width:90%;
-
+	flex-grow:1;
 }
 
 /* header */
 .header {
-display:flex;
-justify-content: space-between;
+	display:flex;
+	justify-content: space-between;
 	color: #9A9A9A;
-	font-size: 1em;
 }
 
 .infocraft_logo {
@@ -27,17 +29,25 @@ justify-content: space-between;
 }
 
 .infocraft_logo img {
-	margin-top: 15px;
+	margin-top: 17px;
 	margin-right: 8px;
 }
 
 .infocraft_logo_title {
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
 }
 
 .infocraft_main_logo_title{
-	font-size:1.2em;
+	font-size:18px;
+}
+
+.contacts {
+	margin-top: 3px;
+}
+
+ .callback {
+	margin-top: 4px;
 }
 
 .phone_number, .call_me_back {
@@ -45,14 +55,13 @@ justify-content: space-between;
 }
 
 /* navigation */
-
 .nav {
 	display: flex;
 	background-image: linear-gradient(45deg, #8D8C8C, #525252);
-	margin:40px 0;	
-	
-
+	margin:45px 0 65px 0;	
+	padding:10px 10px;
 }
+
 .nav_items_list {	
 	display: flex;
 	list-style: none;
@@ -63,8 +72,8 @@ justify-content: space-between;
 	margin:0;
 	padding:0;
 }
+
 .nav_item {	
-	/* display: inline-block; */
 	margin: 5% 10%;
 } 
 
@@ -102,26 +111,26 @@ justify-content: space-between;
 	background-color: #5C5C5C;
 }
 
+/* programms containers */
 .programs_wrapper {
 	display:flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 	font-size: 1.5em;
-
+	margin-bottom:60px;
 }
 
 .programs_wrapper a{
 	color: #FFF;
 	margin-left:30px;
 }
-.programs_container {
-	margin:20px;
-}
+
 .programs_wrapper img {
 	margin-bottom:-8px;
 	border-radius: 10px 10px 0 0;
 }
+
 .programs_text {		
 	height:110px;
 	display:flex;
@@ -141,16 +150,111 @@ justify-content: space-between;
 	background-image: linear-gradient(45deg, #F99042, #D34310);
 }
 
-.slider {
-	width: 90%;
-	height: 500px;
-	background-color: #25EDCF;
+/* slider begin*/
+.slideshow-container {
+	margin-top: 60px;
+	position: relative;
+	border: 5px #EAEAEA solid;
 }
 
+.mySlides {
+  	display: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+	color: red;
+	font-size: 16px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+  	width: 100%;
+  	text-align: center;
+}
+
+.numbertext {
+    color: red;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+	z-index: 100;
+	position: absolute;	
+	margin-top: -25px;
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.first {		
+	margin-left: 25px;
+}
+
+.second {		
+	margin-left: 55px;
+}
+
+.third {		
+	margin-left: 85px;
+}
+
+.active, .dot:hover {
+	background-color: #70D0FD;
+}
+/* slider end */
+
+.suggestions_container {
+	margin-top: 45px;
+	margin-bottom:60px;
+}
+
+.wrapper_line {	
+	width: 90%;
+	size:2px;
+	color: #EEEEEE;
+	margin-bottom:55px;
+}
+
+/* footer */
 .footer {
+	padding: 0 5%;
+  	margin: auto;
+  	width:90%;
+}
+
+.footer_wrapper{
 	display: flex;
 	justify-content: space-between;
-	padding: 0 5%;
 }
 
 .footer_navigation_list {
@@ -161,18 +265,36 @@ justify-content: space-between;
 }
 
 .footer_navigation_item {
-	margin: 10px;
+	margin-bottom:10px;
 }
 
-.special_propose span {
-	font-size: 21px;
+.special_offer {		
+	padding-top:15px;
 }
-.special_propose p {
+
+.special_offer span {
+	font-size: 1.6em;
+}
+
+.special_offer p {
 	color: #666666;
 }
-.special_propose button {
+
+.special_offer button {
 	color: #FFF;
 	background-color:#70D0FD;
 	border: 0;
 	padding: 3.5px;
+	margin-right: 50px;
 }
+
+/* inner shadows */
+.e-mail_input:active, .e-mail_input:focus {
+	box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.5);
+}
+
+.name_input:active, .name_input:focus {
+	box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.5);
+}
+
+/* @media */ 
