@@ -1,6 +1,6 @@
-html, body {
+/* html, body {
 	height: 100%
-}
+} */
 
 body {
 	background-color: #EEEEEE;
@@ -22,7 +22,7 @@ body {
 	background-color: white;
 	padding:55px 5% 0 5%;
 	width:90%;
-	flex-grow:1;
+	/* flex-grow:1; */
 }
 
 /* header */
