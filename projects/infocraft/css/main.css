@@ -1,17 +1,26 @@
 html, body {
-	height: 100%;
+	height: 100%
 }
 
 body {
+	background-color: #EEEEEE;
 	font-family: Arial, sans-serif;
-	max-width: 1080px;
-	margin:auto;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	margin: 0;
 }
 
+.R {
+	font-size:12px;
+	position: absolute;
+}
 .wrapper {
-	margin:55px 5% 95px 5%;
+	max-width: 1080px;
+	display:flex;
+	flex-direction: column;
+	background-color: white;
+	padding:55px 5% 0 5%;
 	width:90%;
 	flex-grow:1;
 }
@@ -82,6 +91,7 @@ body {
 	text-decoration: none;
 }
 
+/* dropdown menu */
 .nav ul ul {
 	display:none;
 	position:absolute;
@@ -114,7 +124,6 @@ body {
 /* programms containers */
 .programs_wrapper {
 	display:flex;
-	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-between;
 	font-size: 1.5em;
@@ -240,21 +249,29 @@ body {
 
 .suggestions_container {
 	margin-top: 45px;
-	margin-bottom:60px;
+	margin-bottom:5px;
+}
+
+.suggestions_container p{
+	margin-top:0;
 }
 
 .wrapper_line {	
-	width: 90%;
-	size:2px;
+	width: 100%;
+	height: 2px;
 	color: #EEEEEE;
-	margin-bottom:55px;
+	margin-top: 110px;
+	margin-bottom: 45px;
 }
-
+	
 /* footer */
 .footer {
-	padding: 0 5%;
-  	margin: auto;
-  	width:90%;
+	margin: auto;
+	background-color: #FFF;
+	max-width: 1080px;
+	padding: 0 5%; 	
+  	width: 90%;
+  	padding-bottom: 80px;
 }
 
 .footer_wrapper{
@@ -302,10 +319,9 @@ body {
 	box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.5);
 }
 
- @media (max-width: 1000px){
-	.programs_wrapper {
-		justify-content: center;		
-	}
+/* media queries */
+
+ @media (max-width: 1000px){	
 	.programs_container {
 		margin:10px;
 	}
@@ -316,15 +332,48 @@ body {
 		flex-direction: column;
 		align-items: center;
 	}
-	.infocraft_logo{		
-	}
 
 	.contacts, .callback {
-	margin-left: 50px;
+		margin-left: 50px;
+	}
+
+	.programs_wrapper {
+		flex-wrap:wrap;
+		justify-content: center;	
 	}
 
 	.programs_container {
-		/* justify-content: center; */
 		margin-bottom: 10px;
+	}
+
+	.nav {
+		width:90%;
+		margin:auto;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 65px;
+		margin-bottom: 45px;
+	}
+
+	.nav_items_list {	
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer_wrapper {
+		flex-direction: column;
+	}
+
+	.footer_navigation, .special_offer form {
+		display: flex;
+		flex-direction: column;
+	}
+	.special_offer form input {
+		margin-bottom: 10px;
+	}
+
+	.special_offer button {
+		margin-right: 0;
 	}
 }
