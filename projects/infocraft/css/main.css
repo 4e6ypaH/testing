@@ -175,6 +175,10 @@ body {
   	display: none;
 }
 
+.mySlides img {
+	margin-bottom: -4px;
+}
+
 .prev, .next {
 	cursor: pointer;
 	position: absolute;
