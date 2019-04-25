@@ -272,6 +272,7 @@ body {
 	padding: 0 5%; 	
   	width: 90%;
   	padding-bottom: 80px;
+  	flex-grow: 0;
 }
 
 .footer_wrapper{
