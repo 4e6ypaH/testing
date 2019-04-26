@@ -1,6 +1,6 @@
 /* html, body {
 	height: 100%
-} */
+}  */
 
 body {
 	background-color: #EEEEEE;
@@ -11,25 +11,30 @@ body {
 	margin: 0;
 }
 
+h2 {
+	font-size:40px;
+}
+
 .R {
 	font-size:12px;
 	position: absolute;
 }
 .wrapper {
 	max-width: 1080px;
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	background-color: white;
-	padding:55px 5% 0 5%;
-	width:90%;
-	/* flex-grow:1; */
+	padding: 55px 5% 0 5%;
+	width: 90%;
+/* 	flex-grow: 1; */
 }
 
 /* header */
 .header {
-	display:flex;
+	display: flex;
 	justify-content: space-between;
 	color: #9A9A9A;
+	font-size:16px;
 }
 
 .infocraft_logo {
@@ -38,7 +43,7 @@ body {
 }
 
 .infocraft_logo img {
-	margin-top: 17px;
+	margin-top: 15px;
 	margin-right: 8px;
 }
 
@@ -47,20 +52,13 @@ body {
 	flex-direction: column;
 }
 
-.infocraft_main_logo_title{
-	font-size:18px;
-}
-
-.contacts {
-	margin-top: 3px;
-}
-
- .callback {
-	margin-top: 4px;
-}
+ .infocraft_main_logo_title{
+	font-size:19px;
+} 
 
 .phone_number, .call_me_back {
 	color: #F78C42;
+	font-size:19px;
 }
 
 /* navigation */
@@ -83,7 +81,10 @@ body {
 }
 
 .nav_item {	
-	margin: 5% 10%;
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:43px;
+	font-size: 20px;
 } 
 
 .nav_item a {
@@ -102,11 +103,12 @@ body {
 	background-color:#FFF;
 	border-radius: 10px;
 	margin-top:-25px;
+	padding-bottom: 20px;
 } 
 
 .nav li ul li{
 	list-style: none;
-	padding:5px 45px 5px 10px;
+	padding:10px 60px 10px 17px;
 } 
 
 .nav li ul li a{
@@ -162,6 +164,7 @@ body {
 .greetings_container, .suggestions_container {
 	display: flex;
 	flex-direction: column;
+	font-size:;
 }
 
 /* slider begin*/
@@ -276,8 +279,7 @@ body {
 	padding: 0 5%; 	
   	width: 90%;
   	padding-bottom: 80px;
-
-
+	font-size: 21px;
 }
 
 .footer_wrapper{
@@ -301,27 +303,28 @@ body {
 }
 
 .special_offer span {
-	font-size: 1.6em;
+	font-size: 35px;
 }
 
 .special_offer p {
 	color: #666666;
 }
-
+/* form elements */
 .special_offer button {
 	color: #FFF;
 	background-color:#70D0FD;
 	border: 0;
 	padding: 3.5px;
 	margin-right: 50px;
+	font-size:21px;
 }
 
+input {
+	font-size:21px;
+
+}
 /* inner shadows */
-.e-mail_input:active, .e-mail_input:focus {
-	box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.5);
-}
-
-.name_input:active, .name_input:focus {
+input:active, input:focus {
 	box-shadow: inset 0px 0px 3px 3px rgba(0,0,0,0.5);
 }
 
@@ -330,6 +333,23 @@ body {
  @media (max-width: 1000px){	
 	.programs_container {
 		margin:10px;
+	}
+	
+	.footer_wrapper {
+		flex-direction: column;
+	}
+
+	.footer_navigation, .special_offer form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.special_offer form input {
+		margin-bottom: 10px;
+	}
+
+	.special_offer button {
+		margin-right: 0;
 	}
 }
 
@@ -364,22 +384,10 @@ body {
 	.nav_items_list {	
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-items: center;		
+	}
+	.nav_item {
+		margin-left:0;
 	}
 
-	.footer_wrapper {
-		flex-direction: column;
-	}
-
-	.footer_navigation, .special_offer form {
-		display: flex;
-		flex-direction: column;
-	}
-	.special_offer form input {
-		margin-bottom: 10px;
-	}
-
-	.special_offer button {
-		margin-right: 0;
-	}
-}
+	
