@@ -264,9 +264,8 @@ h2 {
 }
 
 .wrapper_line {	
-	width: 100%;
-	height: 2px;
-	color: #EEEEEE;
+	color:#E7E7E7;
+	width: 100%;	
 	margin-top: 110px;
 	margin-bottom: 45px;
 }
