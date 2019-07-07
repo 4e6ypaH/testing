@@ -12,7 +12,8 @@ section, fieldset {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	margin: 0 23px 0 23px;
+	margin: 0 23px;
+	padding-bottom:0;
 }
 
 header {
@@ -41,6 +42,11 @@ figure {
 
 figure p, figcaption {
 	text-align: center;
+}
+
+p, figcaption {
+	margin-bottom:0;
+	padding-bottom:0;
 }
 
 
@@ -274,12 +280,11 @@ figure p, figcaption {
 	border: 2px solid #D0DEE8;
 	box-sizing: border-box;
 	border-radius: 20px;
-	padding: 0 15px 15px 15px;
+	padding: 0 15px 21px 15px;
 }
 
 .container p {
 	text-align: center;
-	margin-bottom:0;
 }
 
 .container-button-block {
@@ -292,7 +297,6 @@ figure p, figcaption {
 .container-button{
 	flex-grow:1;
 	height: 52px;
-	cursor: pointer;
 	font-weight: 800;
 	font-size: 14px;
 	line-height: 20px;
@@ -304,6 +308,7 @@ figure p, figcaption {
 	border-radius: 6px;
 	border: none;
 	padding: 0 30px;
+	margin-bottom: 0;
 }
 
 .service-container {
@@ -314,7 +319,7 @@ figure p, figcaption {
 	border: 2px solid #D0DEE8;
 	box-sizing: border-box;
 	border-radius: 20px;
-	padding:0 15px;
+	padding: 0 15px 21px 15px;
 }
 
 .service-container h3 {
@@ -324,11 +329,7 @@ figure p, figcaption {
 .server-image {
 	display: flex;
 	justify-content: flex-end;
-	margin:24px -40px 35px 0;
-}
-
-.priority p {
-	/* margin-bottom: 0; */
+	margin:24px -40px 14px 0;
 }
 
 .integration button {
@@ -339,13 +340,10 @@ figure p, figcaption {
 	margin:0;
 }
 
-.security-garantees .service-container{
-	padding-bottom: 0;
-}
-
 .cat {
 	display: flex;
 	justify-content: flex-end;
+	margin-bottom: -21px;
 }
 
 .priority {
@@ -357,9 +355,6 @@ figure p, figcaption {
 	text-transform: uppercase;
 }
 
-.our-team, .system-security {
-	padding-bottom: 15px;
-}
 
 .logo {
 	margin-top: 30px;
@@ -402,10 +397,11 @@ figure p, figcaption {
 
 .extra {
 	display: none;
+	margin-bottom:0;
+	padding-bottom:0;
 }
 
 .extra-button {
-	cursor: pointer;
 	display:flex;
 	border:none;
 	border-radius: 11px;
@@ -421,9 +417,10 @@ figure p, figcaption {
 	text-align: center;
 	color: #00527B;
 	background-color: #D8E5ED;
-	margin: 19px auto;
+	margin: 19px auto 0 auto;
 }
 
 .arrow {
 	margin:10px 25px 0 10px;
 }
+
