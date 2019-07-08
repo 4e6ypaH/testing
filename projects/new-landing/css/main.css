@@ -1,7 +1,7 @@
 body {
 	margin:0;
 	padding:0;
-/* 	font-weight: 500; */
+	font-weight: 500;
 }
 
 body * {
@@ -34,6 +34,8 @@ h4 {
 	font-size: 24px;
 	line-height: 29px;
 	color: #FF931A;
+	margin-top:0px;
+	margin-padding:0px;
 }
 
 figure {
@@ -50,12 +52,6 @@ p, figcaption {
 	line-height: 25px;	
 	margin-bottom:0;
 	padding-bottom:0;
-}
-
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	margin:auto;
 }
 
 
@@ -88,7 +84,7 @@ p, figcaption {
 }
 
 .group {
-	margin:auto;
+	margin:18px auto 19px auto;
 }
 
 .ADS {
@@ -102,18 +98,22 @@ p, figcaption {
 	line-height: 35px;
 }
 
-.ADS p {
-	
+.ADS p {	
 	font-size: 17px;
 	line-height: 24px;	
 }
 
-.red{
+.red {
 	color:#FF1A31;
 }
 
 .orange {
 	color: #FF931A;
+	font-weight: bold;
+}
+
+.ready-solution {
+	padding-bottom: 13px;
 }
 
 .ready-solution p {
@@ -135,7 +135,7 @@ p, figcaption {
 	border-radius: 6px;
 	border: none;
 	padding: 0 20px;
-	margin: 33px auto 27px auto;
+	margin: 25px auto 14px auto;
 	flex-grow:1;
 }
 
@@ -144,12 +144,12 @@ p, figcaption {
 }
 
 .quote {
-	
-	font-size: 14px;
-	line-height: 26px;
+	padding-top:33px;
 }
 
-.quote strong {
+.quote b {	
+	font-size: 14px;
+	line-height: 26px;
 	text-transform:uppercase;
 }
 
@@ -157,14 +157,19 @@ p, figcaption {
 	width:321px;
 	height: 282px;
 	margin:auto;
+	margin-top: 8px;
+	position:relative;
 }
 
 .Boris-text {
-	margin-top: 30px;
+	position: absolute;
+	top: 10px;
+
 }
 
 .Boris-text p {
-	line-height: 15px;
+	font-size: 13px;
+	line-height: 16px;
 }
 
 .laptop {
@@ -176,9 +181,15 @@ p, figcaption {
 	line-height: 16px;
 	text-align: center;
 	color: #00527B;
+	margin-bottom: 25px;
 }
 
-.price-calculation {	
+.price-calculation {
+	margin-bottom:0;	
+}
+
+.price-header {
+	margin-top: 30px;
 }
 
 .calculate-container {
@@ -258,7 +269,7 @@ p, figcaption {
 }
 
 .abilities-list {
-	margin:0 53px 0 0;
+	margin:87px 53px 84px 0;
 }
 
 .abilities-list li {
@@ -266,21 +277,18 @@ p, figcaption {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 17px;
+	border-bottom: solid 1px #F4F4F4;
+	padding:10px;
+
 }
 
 .abilities-list li span {
 	color: #FF931A;
 }
 
-.list-line {
-	background-color: #F4F4F4;
-	height:1px;
-	width:100%;
-	border:none;
-}
-
 .control-room {
 	text-align:center;
+	margin-bottom:40px;
 }
 
 .all-you-need {
@@ -292,13 +300,15 @@ p, figcaption {
 
 .simple-integration {
 	color: #00527B;
+	text-align: center;
+	margin-top:95px;
 }
 
 .simple-integration p {
 	font-weight: normal;
 	font-size: 16px;
 	line-height: 25px;
-	text-align: center;
+/* 	text-align: center; */
 }
 
 .container, .service-container {
@@ -357,6 +367,18 @@ p, figcaption {
 	margin:0;
 }
 
+.we-garantee p {
+	margin-bottom:15px;
+}
+
+.security-garantees {
+	margin-top: 130px;
+}
+
+.security-header {
+	top: -50px;
+}
+
 .lightning {
 	margin-top: 40px;
 }
@@ -375,7 +397,6 @@ p, figcaption {
 	font-weight: 600;
 	text-transform: uppercase;
 }
-
 
 .logo {
 	margin-top: 30px;
@@ -402,19 +423,6 @@ p, figcaption {
 	margin-top:21px;
 }
 
-.our-clients {	
-	font-size: 16px;
-	line-height: 25px;
-	color: #00527B;
-	background-color: #EAF1F6;
-	margin:0;
-	padding:0 23px;
-}
-
-.our-clients-header {
-
-}
-
 .extra {
 	display: none;
 	margin-bottom:0;
@@ -425,13 +433,11 @@ p, figcaption {
 	display:flex;
 	border:none;
 	border-radius: 11px;
-	padding:8px 0 7px 24px ;
-	
+	padding:8px 0 7px 24px ;	
 	font-size: 15px;
 	line-height: 24px;
 	text-align: center;
-	color: #00527B;
-	
+	color: #00527B;	
 	font-size: 15px;
 	line-height: 24px;
 	text-align: center;
@@ -440,7 +446,37 @@ p, figcaption {
 	margin: 19px auto 0 auto;
 }
 
+.phone-button {
+	height: 52px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: linear-gradient(83.91deg, #FF1A31 -1.59%, #FF931A 130.38%);
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+	border-radius: 6px;
+	border: none;
+	padding: 0 20px;
+	margin: 24px auto 44px auto;
+	flex-grow:1;
+	font-weight: 600;
+	font-size: 23px;
+	line-height: 28px;
+}
+
 .arrow {
 	margin:10px 25px 0 10px;
+}
+
+.our-clients {	
+	font-size: 16px;
+	line-height: 25px;
+	color: #00527B;
+	background-color: #EAF1F6;
+	margin:0;
+	padding:34px 23px 0 23px;
+}
+
+.our-clients-header {
+	text-align:left;
 }
 
