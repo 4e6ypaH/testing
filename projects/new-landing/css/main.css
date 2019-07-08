@@ -1,6 +1,7 @@
 body {
 	margin:0;
 	padding:0;
+/* 	font-weight: 500; */
 }
 
 body * {
@@ -8,12 +9,8 @@ body * {
 	font-style: normal;
 }
 
-section, fieldset {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+section {
 	margin: 0 23px;
-	padding-bottom:0;
 }
 
 header {
@@ -21,16 +18,19 @@ header {
 	justify-content: space-between;	
 }
 
-h3 {
-	font-weight: 600;
+h2 {
 	font-size: 22px;
 	line-height: 27px;
 	color: #00527B;
-	text-align: center;
+	text-align:center;
+}
+
+h3 {
+	font-size: 24px;
+	line-height: 29px;
 }
 
 h4 {
-	font-weight: 600;
 	font-size: 24px;
 	line-height: 29px;
 	color: #FF931A;
@@ -45,20 +45,24 @@ figure p, figcaption {
 }
 
 p, figcaption {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 25px;	
 	margin-bottom:0;
 	padding-bottom:0;
 }
 
-
 .wrapper {
 	display: flex;
-	flex-wrap:wrap;
 	flex-direction: column;
+	margin:auto;
 }
+
 
 .rk-logo {
 	margin: 16px 0 0 23px;
 }
+
 .burger {
 	margin: 29px 32px 27px 23px;
 }
@@ -70,6 +74,19 @@ p, figcaption {
 	border:none;
 }
 
+.laws-and-GOSTs {
+	display: flex;
+}
+
+.laws, .GOSTs {
+	display: flex;
+	flex-direction: column;
+}
+
+.and {
+	margin:0 5px;
+}
+
 .group {
 	margin:auto;
 }
@@ -78,6 +95,7 @@ p, figcaption {
 	color: #00527B;
 	margin: 0 23px;
 }
+
 .ADS h1 {
 	font-weight: 800;
 	font-size: 26px;
@@ -85,7 +103,7 @@ p, figcaption {
 }
 
 .ADS p {
-	font-weight: 500;
+	
 	font-size: 17px;
 	line-height: 24px;	
 }
@@ -99,7 +117,6 @@ p, figcaption {
 }
 
 .ready-solution p {
-	font-weight: normal;
 	font-size: 15px;
 	line-height: 21px;
 	color: #333333;
@@ -107,7 +124,6 @@ p, figcaption {
 
 .button	{
 	height: 52px;
-	cursor: pointer;
 	font-weight: 800;
 	font-size: 14px;
 	line-height: 20px;
@@ -118,8 +134,9 @@ p, figcaption {
 	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
 	border-radius: 6px;
 	border: none;
-	/* padding: 0 20px; */
-	margin: 33px 0 27px 0;
+	padding: 0 20px;
+	margin: 33px auto 27px auto;
+	flex-grow:1;
 }
 
 .brown {
@@ -127,7 +144,7 @@ p, figcaption {
 }
 
 .quote {
-	font-weight: 500;
+	
 	font-size: 14px;
 	line-height: 26px;
 }
@@ -154,18 +171,22 @@ p, figcaption {
 	margin:auto;
 }
 
-.small-text {
-	font-weight: 500;
+.small-text {	
 	font-size: 13px;
 	line-height: 16px;
 	text-align: center;
 	color: #00527B;
 }
 
+.price-calculation {	
+}
+
 .calculate-container {
 	display: flex;
 	justify-content: center;
-	margin-bottom:19px;
+	margin-bottom:19px;	
+	font-size: 13px;
+	line-height: 16px;
 }
 
 .block {
@@ -173,6 +194,7 @@ p, figcaption {
 }
 
 .calculate-container input {
+	font-size:28px;
 	width: 100px;
 	height: 50px;
 	text-align: center;
@@ -182,8 +204,13 @@ p, figcaption {
 }
 
 .fixed-sum-block, .one-house-price-block {
+	line-height: 34px;
 	display: flex;
 	flex-direction: column;
+}
+
+.fixed-sum, .one-house-price {
+	font-size: 28px;
 }
 
 .plus img {
@@ -197,15 +224,13 @@ p, figcaption {
 	margin-bottom: -17px;
 }
 
-
 .number {
 	font-weight: 600;
-	font-size: 28px;
-	line-height: 34px;
+	font-size: 16px;
 	color: #00527B;
 }
-.number-comment {
-	font-weight: 500;
+
+.number-comment {	
 	font-size: 13px;
 	line-height: 16px;
 	color: #00527B;
@@ -213,9 +238,13 @@ p, figcaption {
 
 .result-block {
 	font-weight: 600;
-	font-size: 28px;
+	font-size: 16px;
 	line-height: 44px;
 	color: #23B39A;
+}
+
+.result {
+	font-size: 28px;
 }
 
 .all-abilities {
@@ -224,13 +253,14 @@ p, figcaption {
 	line-height: 18px;
 	text-align: center;
 	color: #00527B;
-	margin: 0 37.5px 23px 37.5px;
+	margin: 0 auto 23px auto;
 	list-style-type: circle;
 }
 
 .abilities-list {
 	margin:0 53px 0 0;
 }
+
 .abilities-list li {
 	color:#D0DEE8;
 	font-weight: bold;
@@ -271,30 +301,32 @@ p, figcaption {
 	text-align: center;
 }
 
-.container {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: center;
+.container, .service-container {
+	margin-top: 75px;
+	position: relative;
 	color:#00527B;
 	border: 2px solid #D0DEE8;
 	box-sizing: border-box;
 	border-radius: 20px;
-	padding: 0 15px 21px 15px;
+	padding: 44px 15px 21px 15px;
 }
 
-.container p {
-	text-align: center;
+.container-header {
+	position: absolute;
+	top: -25px;
+	left: 20px;
+	transform: translateY(-50%);
+	background-color: #fff;
+	padding: 0 8px;
 }
 
-.container-button-block {
+.button-block {
 	display: flex;
 	justify-content: center;
 	padding:0;
-	border:none;
 }
 
-.container-button{
+.container-button {
 	flex-grow:1;
 	height: 52px;
 	font-weight: 800;
@@ -311,21 +343,6 @@ p, figcaption {
 	margin-bottom: 0;
 }
 
-.service-container {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	color:#00527B;
-	border: 2px solid #D0DEE8;
-	box-sizing: border-box;
-	border-radius: 20px;
-	padding: 0 15px 21px 15px;
-}
-
-.service-container h3 {
-	text-align:left;
-}
-
 .server-image {
 	display: flex;
 	justify-content: flex-end;
@@ -336,8 +353,12 @@ p, figcaption {
 	margin-top:35px;
 }
 
-.we-garantee .service-container h4{
+.we-garantee .service-container h4 {
 	margin:0;
+}
+
+.lightning {
+	margin-top: 40px;
 }
 
 .cat {
@@ -381,8 +402,7 @@ p, figcaption {
 	margin-top:21px;
 }
 
-.our-clients {
-	font-weight: 500;
+.our-clients {	
 	font-size: 16px;
 	line-height: 25px;
 	color: #00527B;
@@ -391,8 +411,8 @@ p, figcaption {
 	padding:0 23px;
 }
 
-.our-clients h3 {
-	text-align:left;
+.our-clients-header {
+
 }
 
 .extra {
@@ -406,12 +426,12 @@ p, figcaption {
 	border:none;
 	border-radius: 11px;
 	padding:8px 0 7px 24px ;
-	font-weight: 500;
+	
 	font-size: 15px;
 	line-height: 24px;
 	text-align: center;
 	color: #00527B;
-	font-weight: 500;
+	
 	font-size: 15px;
 	line-height: 24px;
 	text-align: center;
