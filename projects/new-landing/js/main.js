@@ -21,9 +21,8 @@ let inputValueArray =document.querySelectorAll('input');
 /*после ввода значения в инпут изменяем значение блока result,
  преобразовав слагаемые к числовому типу*/
 for (let i = 0; i < inputValueArray.length; i++) {
-	inputValueArray[i].addEventListener('keypress', function(){
-		resultArray[i].innerHTML = +fixedSumArray[i].innerHTML +
-		 +oneHousePriceArray[i].innerHTML*inputValueArray[i].value;
-		 console.log(resultArray[i].innerHTML);
-	})	
+		inputValueArray[i].addEventListener('keypress', function(){
+		resultArray[i].innerHTML = (+fixedSumArray[i].innerHTML +
+		 +oneHousePriceArray[i].innerHTML*inputValueArray[i].value);	
+		})
 }
