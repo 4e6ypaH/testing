@@ -499,3 +499,6 @@ p, figcaption {
 	text-align:left;
 }
 
+.google-maps {
+	border:none;
+}
