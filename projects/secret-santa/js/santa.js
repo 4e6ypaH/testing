@@ -5,7 +5,7 @@ app.controller("SecretSantaController", function($scope, $localStorage){
     function randomizePerson() {
         var max = $localStorage.list.length - 1;
         var min = 0;
-        $scope.randomNumber = Math.floor(Math.random() * (max-min));
+        $scope.randomNumber = Math.floor(Math.random() * (max-min)) + min;
     }
 
     $scope.saveData = function() {
