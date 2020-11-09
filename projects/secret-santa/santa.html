@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa</title>
+</head>
+<body ng-app="app">
+    <div class="main_block" ng-controller="SecretSantaController">
+        <button class="saveData" ng-click="loadData()">load Data</button>
+        <button class="saveData" ng-click="saveData()">save Data</button>
+        {{person}}
+    </div>   
+    
+    <script src="js/angular.min.js"></script>
+    <script src="js/ngStorage.min.js"></script>
+    <script src="js/santa.js"></script>
+</body>
+</html>
