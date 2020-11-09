@@ -6,12 +6,19 @@
     <title>Secret Santa</title>
 </head>
 <body ng-app="app">
-    <div class="main_block" ng-controller="SecretSantaController">
-        <button class="saveData" ng-click="loadData()">load Data</button>
-        <button class="saveData" ng-click="saveData()">save Data</button>
-        {{person}}
-    </div>   
-    
+    <main ng-controller="SecretSantaController">
+        <div class="message" ng-hide="list.length || isUploaded"><h2>Список участников пуст. Нажмите кнопку "сформировать список"</h2>
+            <button class="button" ng-click="savePersons()">сформировать список</button>
+        </div>
+        <div class="main_block" ng-hide="isRecieved || !list.length">
+            {{startedList}}
+            <h2>Введите свою фамилию, затем нажмите кнопку 'стать Сантой', чтобы узнать кому дарить подарок.</h2>
+            <input type="text" ng-model="user">
+            <button class="button" ng-click="loadPerson()">стать Сантой</button>
+        </div>
+        <br>
+        {{checkedPerson}}
+    </main>   
     <script src="js/angular.min.js"></script>
     <script src="js/ngStorage.min.js"></script>
     <script src="js/santa.js"></script>

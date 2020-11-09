@@ -1,20 +1,37 @@
 var app = angular.module("app", ['ngStorage']);
 
 app.controller("SecretSantaController", function($scope, $localStorage){
+
+    var uncheckedPerson = '';
+
+    $scope.isUploaded = false;
+    $scope.isRecieved = false;
+    $scope.startedList = ['Зацепин', 'Зацепина', 'Падорин', 'Кочнева', 'Трошков', 'Цеков', 'Григорьева'];
+
+    $scope.list = $localStorage.list;
     
     function randomizePerson() {
-        var max = $localStorage.list.length - 1;
-        var min = 0;
-        $scope.randomNumber = Math.floor(Math.random() * (max-min)) + min;
+            $scope.randomNumber = Math.floor(Math.random() * $localStorage.list.length);
     }
 
-    $scope.saveData = function() {
-        var list = ['Zatsepin', 'Zatsepina', 'Padorin', 'Kochneva', 'Troshkov', 'Tsekov', 'Grigoryeva'];
-        $localStorage.list = list;
+    function checkPerson() {
+        if (uncheckedPerson === $scope.user) {
+            $scope.loadPerson()
+        } else {
+            $localStorage.list.splice($scope.randomNumber, 1);
+            $scope.checkedPerson = uncheckedPerson;
+        }
+    }
+
+    $scope.savePersons = function() {
+        $scope.list = $localStorage.list = $scope.startedList;        
+        $scope.isUploaded = true;
     }
     
-    $scope.loadData = function() {
+    $scope.loadPerson = function() {
         randomizePerson();
-        $scope.person = $localStorage.list[$scope.randomNumber];
-    }
+        uncheckedPerson = $localStorage.list[$scope.randomNumber];    
+        checkPerson();
+        $scope.isRecieved = true
+        }  
 })
