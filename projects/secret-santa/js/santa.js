@@ -4,34 +4,51 @@ app.controller("SecretSantaController", function($scope, $localStorage){
 
     var uncheckedPerson = '';
 
-    $scope.isUploaded = false;
+    // заводим булки для отображения/скрытия нужных блоков на вьюхе
+    $scope.isUploaded = false; 
     $scope.isRecieved = false;
-    $scope.startedList = ['Зацепин', 'Зацепина', 'Падорин', 'Кочнева', 'Трошков', 'Цеков', 'Григорьева'];
 
-    $scope.list = $localStorage.list;
+    getPersonsToView();
+
+    console.log($localStorage.personsStartedList);
+    console.log($localStorage.persons);
+
+    // сохраняем список и его неизменную копию в локальном хранилище
+    $scope.savePersons = function() {
+            $localStorage.persons = $scope.enteredPersonsList.trim().split(',');
+            if ($localStorage.persons.length < 3) {
+                alert('Введите хотя бы 3 участников.');
+            } else {
+                $localStorage.personsStartedList = angular.copy($scope.enteredPersonsList.trim().split(','));
+                $scope.isUploaded = true;
+                getPersonsToView(); 
+            }             
+    }
     
-    function randomizePerson() {
-            $scope.randomNumber = Math.floor(Math.random() * $localStorage.list.length);
+    // отображаем рандомного участника на вьюхе, проверив, что это не текущий пользователь
+    $scope.loadPerson = function() {
+        getUncheckedPerson();
+        checkPerson();     
+        $scope.isRecieved = true;
+        } 
+        
+    // для корректного отображения блоков на вьюхе нужно дублировать код, поэтому вынес его в отдельную ф-ию 
+    function getPersonsToView() {
+        $scope.persons = $localStorage.persons;
+        $scope.personsStartedList = $localStorage.personsStartedList;
+    }
+
+    function getUncheckedPerson() {
+        $scope.randomPersonIndex = Math.floor(Math.random() * $localStorage.persons.length);
+        uncheckedPerson = $localStorage.persons[$scope.randomPersonIndex].trim();  
     }
 
     function checkPerson() {
         if (uncheckedPerson === $scope.user) {
-            $scope.loadPerson()
+            getUncheckedPerson();
         } else {
-            $localStorage.list.splice($scope.randomNumber, 1);
+            $localStorage.persons.splice($scope.randomPersonIndex, 1);
             $scope.checkedPerson = uncheckedPerson;
         }
     }
-
-    $scope.savePersons = function() {
-        $scope.list = $localStorage.list = $scope.startedList;        
-        $scope.isUploaded = true;
-    }
-    
-    $scope.loadPerson = function() {
-        randomizePerson();
-        uncheckedPerson = $localStorage.list[$scope.randomNumber];    
-        checkPerson();
-        $scope.isRecieved = true
-        }  
 })

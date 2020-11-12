@@ -1,0 +1,30 @@
+.content {
+    text-align: center;
+}
+
+.mobile {
+    display: flex; 
+    flex-direction: column;
+}
+
+@media (min-width: 415px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 415px) {
+    .desktop {
+        display: none;
+    }
+    .saveButton, .loadButton {
+        margin-top: 10px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+

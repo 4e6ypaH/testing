@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Secret Santa</title>
 </head>
 <body ng-app="app">
-    <main ng-controller="SecretSantaController">
-        <div class="message" ng-hide="list.length || isUploaded"><h2>Список участников пуст. Нажмите кнопку "сформировать список"</h2>
-            <button class="button" ng-click="savePersons()">сформировать список</button>
+    <main class="content" ng-controller="SecretSantaController">
+        <div class="message" ng-hide="persons.length || isUploaded || !persons.length && checkedPerson"><h2>Список участников пуст. Введите новый список фамилий участников через запятую и нажмите кнопку "сформировать список"</h2>
+            <input type="text" ng-model="enteredPersonsList">
+            <button class="saveButton" ng-click="savePersons()" ng-disabled="!enteredPersonsList">сформировать список</button>
         </div>
-        <div class="main_block" ng-hide="isRecieved || !list.length">
-            {{startedList}}
+        <div class="main_block" ng-hide="isRecieved || !persons.length">
+            <p class="desktop">Список участников:<span> {{personsStartedList}}</span></p>
+            <p class="mobile">Список участников: <span ng-repeat= "person in personsStartedList">{{person}}</span></p>
             <h2>Введите свою фамилию, затем нажмите кнопку 'стать Сантой', чтобы узнать кому дарить подарок.</h2>
-            <input type="text" ng-model="user">
-            <button class="button" ng-click="loadPerson()">стать Сантой</button>
+            <div class='form-group'>
+                <input type="text" ng-model="user">
+                <button class="loadButton" ng-click="loadPerson()">стать Сантой</button>
+            </div>
         </div>
         <br>
-        {{checkedPerson}}
+        <div ng-show="checkedPerson">Кому дарить: {{checkedPerson}}</div>
     </main>   
     <script src="js/angular.min.js"></script>
     <script src="js/ngStorage.min.js"></script>
