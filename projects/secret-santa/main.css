@@ -7,6 +7,10 @@
     flex-direction: column;
 }
 
+.getBackButton {
+    margin-top: 10px
+}
+
 @media (min-width: 415px) {
     .mobile {
         display: none;

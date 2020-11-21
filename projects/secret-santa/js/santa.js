@@ -19,7 +19,13 @@ app.controller("SecretSantaController", function($scope, $localStorage){
             if ($localStorage.persons.length < 3) {
                 alert('Введите хотя бы 3 участников.');
             } else {
-                $localStorage.personsStartedList = angular.copy($scope.enteredPersonsList.trim().split(','));
+                $localStorage.personsStartedList = [];
+                var enteredPersonsList = angular.copy($scope.enteredPersonsList.trim().split(','));
+                enteredPersonsList.forEach( function(item){
+                    $localStorage.personsStartedList.push(item.trim());
+                });
+                console.log($localStorage.personsStartedList);
+                
                 $scope.isUploaded = true;
                 getPersonsToView(); 
             }             
@@ -31,6 +37,10 @@ app.controller("SecretSantaController", function($scope, $localStorage){
         checkPerson();     
         $scope.isRecieved = true;
         } 
+
+    $scope.reloadPage = function() {
+        location.reload()
+    }
         
     // для корректного отображения блоков на вьюхе нужно дублировать код, поэтому вынес его в отдельную ф-ию 
     function getPersonsToView() {
@@ -44,11 +54,23 @@ app.controller("SecretSantaController", function($scope, $localStorage){
     }
 
     function checkPerson() {
-        if (uncheckedPerson === $scope.user) {
+        while (uncheckedPerson === $scope.user) {
+            if ($localStorage.persons.length === 1) {
+                alert('В списке осталась только ваша фамилия. Либо Вы уже стали Сантой, либо кто-то накосячил!');
+                location.reload();
+                return;
+            }
             getUncheckedPerson();
-        } else {
-            $localStorage.persons.splice($scope.randomPersonIndex, 1);
-            $scope.checkedPerson = uncheckedPerson;
         }
+        console.log($localStorage.personsStartedList);
+        var hasUser = $localStorage.personsStartedList.includes($scope.user);
+        if (!hasUser) {
+            alert('Введите корректную фамилию из списка');
+            location.reload();
+            return;
+        } 
+
+        $localStorage.persons.splice($scope.randomPersonIndex, 1);
+        $scope.checkedPerson = uncheckedPerson;
     }
 })

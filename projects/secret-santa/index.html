@@ -18,11 +18,12 @@
             <h2>Введите свою фамилию, затем нажмите кнопку 'стать Сантой', чтобы узнать кому дарить подарок.</h2>
             <div class='form-group'>
                 <input type="text" ng-model="user">
-                <button class="loadButton" ng-click="loadPerson()">стать Сантой</button>
+                <button class="loadButton" ng-click="loadPerson()" ng-disabled="!user">стать Сантой</button>
             </div>
         </div>
         <br>
         <div ng-show="checkedPerson">Кому дарить: {{checkedPerson}}</div>
+        <button class="getBackButton" ng-show="checkedPerson" ng-click="reloadPage()">вернуться</button>
     </main>   
     <script src="js/angular.min.js"></script>
     <script src="js/ngStorage.min.js"></script>
