@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-.getBackButton {
+.get-back-button {
     margin-top: 10px
 }
 
@@ -21,7 +21,7 @@
     .desktop {
         display: none;
     }
-    .saveButton, .loadButton {
+    .save-button, .load-button {
         margin-top: 10px;
     }
 
